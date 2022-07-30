@@ -1,0 +1,7 @@
+.homepic{
+    background-image: url('/static/firsttune/books1.jpeg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
