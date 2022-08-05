@@ -27,19 +27,152 @@
 
     <script src="jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'firsttune/index.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'firsttune/animate.css' %}">
 
 
-    <title>Document</title>
+    <title>patstune</title>
 </head>
 
-<body>
-    <div class="container-fluid homepic py-5 ">
-        <div class="row align-items-center justify-content-center py-5 my-5">
-            <div class="col-sm-6 py-5 my-5 text-center">
-                <h1 class="font-weight-bold text-large font-large">PATS TUNE</h1>
+<body class="d9">
+    <div id='homepic' class="container-fluid homepic align-items-center justify-content-center">
+        <div id='homerow' class="row align-items-center justify-content-center">
+            <div class="col-sm-12 text-center">
+                <h1 class="font-weight-bold text-large font-large text-white 
+                hometext customfont px-5 px-sm-0">PAT'S TUNE</h1>
             </div>
         </div>
     </div>
+    <div class='wait_small ' id='wait_small'>
+
+        <div class="container box_shadow animate__animated animate__fadeIn animate__slower">
+            <div class="row align-items-center justify-content-center brandcolor">
+                <nav class="navbar navbar-expand-lg fixed navbar-dark w-100 brandcolor"
+                    style="background-color: inherit; ">
+                    <a class="navbar-brand  " style="color: white">
+                        <!-- <img src="{% static 'michael/clipmask2.jpg' %}" class="nav-image" height="35px" width="35px"></img> -->
+                        <span class="customfont"> PATSTUNE</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse  float-right" id="navbarNav">
+                        <ul class="nav navbar-nav navbar-right ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link nav_link_" style="color: white">Featured</a>
+                            </li>
+                            <li class="nav-text active  float-right">
+                                <a class="nav-link nav_link_" style="color: white">Our Team <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-text active navbar-right">
+                                <a class="nav-link nav_link_" style="color: white">Contact Us</a>
+                            </li>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+                {% block content1 %}
+
+        <div class="container bg-white py-5 mt-2 animate__animated animate__fadeIn animate__slower">
+            <div class="row align-items-end justify-content-center ">
+                <div class="col-sm-6 ">
+                    <a href="{% url 'firsttune:post1' %}">
+                        <div class="position-relative">
+                            <img src="{% static 'firsttune/p6.jfif' %}" class="img-fluid imgs1 w-100">
+                            <div class="position-absolute text1 text-white bg_linear1  py-1 text-center">
+                                <div class="pt-5 text-md-left px-5">
+                                    <p>In the latest news
+                                        The Kwame Nkrumah University of sciecen and technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="position-relative">
+                        <img src="{% static 'firsttune/p3.jfif' %}" class="img-fluid imgs1 w-100">
+                        <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
+                            <div class="pt-2 text-md-left px-5">
+                                <p>In the latest news
+                                    The Kwame Nkrumah University of sciecen and technology</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-3 border_right_color s">
+                    First post goes here
+                </div> -->
+
+                </div>
+            </div>
+            <div class="container bg-white py-5 ">
+                <div class="row align-items-end justify-content-center">
+                    <div class="col-sm-4  ">
+                        <div class="position-relative">
+                            <img src="{% static 'firsttune/p2.jfif' %}" class="img-fluid imgs1 w-100">
+                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
+                                <div class="pt-5 text-md-left px-3">
+                                    <p>In the latest news
+                                        The Kwame Nkrumah University of sciecen and technology</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="position-relative">
+                            <img src="{% static 'firsttune/p3.jfif' %}" class="img-fluid imgs1 w-100">
+                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
+                                <div class="pt-5 text-md-left px-3">
+                                    <p>In the latest news
+                                        The Kwame Nkrumah University of sciecen and technology</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="position-relative">
+                            <img src="{% static 'firsttune/p5.png' %}" class="img-fluid imgs1 w-100">
+                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
+                                <div class="pt-5 text-md-left px-3">
+                                    <p>In the latest news
+                                        The Kwame Nkrumah University of sciecen and technology</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-sm-12 my-5">
+                        <div class="position-relative">
+                            <img src="{% static 'firsttune/p6.jfif' %}" class="img-fluid imgs1 w-100">
+                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center w-100">
+                                <div class="pt-5">
+                                    <p>In the latest news
+                                        The Kwame Nkrumah University of sciecen and technology</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        {% endblock %}
+        </div>
 </body>
 
 </html>

@@ -1,7 +1,73 @@
+:root{
+    --b1: rgb(41, 55, 8);
+    --b1: rgb(5, 5, 32);
+}
+
 .homepic{
-    background-image: url('/static/firsttune/books1.jpeg');
+    background-image: url('/static/firsttune/books3.jpeg');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: darken;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center     ;
+}
+
+.hometext{
+    font-size: 10vw;
+    text-decoration-line: underline;    
+}
+
+@font-face {
+    font-family: CustomFont;
+    src:  url('/static/firsttune/COBAISSI.otf');
+       }
+
+.customfont{
+    font-family: CustomFont;
+    text-decoration-line: overline underline;    
+
+
+}
+
+.brandcolor{
+    background-color: var(--b1);
+}
+
+.d9{
+    background-color: #d9d9d90f;
+}
+
+.border_right_color{
+    border-right: 5px solid var(--b1);
+}
+
+
+.box_shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+.post_col1{
+    /* position: absolute;
+    top: 5%; */
+}
+
+.text1{
+    position: absolute;
+    bottom: 0;
+}
+
+.bg_linear1{
+    background-image: linear-gradient(to bottom, transparent,  var(--b1), var(--b1));
+}
+
+.font_nice1{
+    line-height: 2;
+    font-size: 1.5rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

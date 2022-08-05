@@ -30,8 +30,8 @@ class IndexView(TemplateView):
     template_name = "firsttune/index.html"
     
 
-# class FeaturedView(TemplateView):
-#     template_name = 'michael/featured.html'
+class Post1View(TemplateView):
+    template_name = "firsttune/post1.html"
 
 
 # class TeamView(TemplateView):
