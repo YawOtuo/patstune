@@ -3,7 +3,7 @@ window.onload = (event) => {
 
     setTimeout(remove, 2500)
     hide_wait_small()
-    setTimeout(show_wait_small, 2000)
+    setTimeout(show_wait_small, 2500)
 
 
 }
