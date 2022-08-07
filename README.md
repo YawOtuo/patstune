@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Patstune
 
 <h1>Patstune is a blog website</h1>
@@ -14,5 +13,4 @@
 =======
 # patstune
 
-div
->>>>>>> 83693294a1fac4468a753cd48ac0cc2c5f04573e
+
