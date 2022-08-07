@@ -1,9 +1,9 @@
 window.onload = (event) => {
-    fadeIn()
+    // fadeIn()
 
-    setTimeout(remove, 2500)
-    hide_wait_small()
-    setTimeout(show_wait_small, 2500)
+    // setTimeout(remove, 2500)
+    // hide_wait_small()
+    // setTimeout(show_wait_small, 1500)
 
 
 }
@@ -12,7 +12,7 @@ fadeIn =() => {
     homerow = document.getElementById('homepic')
     console.log(homerow)
     homerow.classList.add("animate__animated")
-    homerow.classList.add("animate__slower")
+    homerow.classList.add("animate__slow")
 
     homerow.classList.add("animate__fadeOut")
 

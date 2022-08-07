@@ -34,8 +34,8 @@
     <title>patstune</title>
 </head>
 
-<body class="d9">
-    <div id='homepic' class="container-fluid homepic align-items-center justify-content-center">
+<body class="d9 body">
+    <div id='homepic' class="d-none container-fluid homepic align-items-center justify-content-center">
         <div id='homerow' class="row align-items-center justify-content-center">
             <div class="col-sm-12 text-center">
                 <h1 class="font-weight-bold text-large font-large text-white 
@@ -43,9 +43,9 @@
             </div>
         </div>
     </div>
-    <div class='wait_small ' id='wait_small'>
+    <div class='wait_small d9' id='wait_small'>
 
-        <div class="container box_shadow animate__animated animate__fadeIn animate__slower">
+        <div class="container-fluid box_shadow animate__animated animate__fadeIn animate__slow">
             <div class="row align-items-center justify-content-center brandcolor">
                 <nav class="navbar navbar-expand-lg fixed navbar-dark w-100 brandcolor"
                     style="background-color: inherit; ">
@@ -60,14 +60,14 @@
                     <div class="collapse navbar-collapse  float-right" id="navbarNav">
                         <ul class="nav navbar-nav navbar-right ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link nav_link_" style="color: white">Featured</a>
+                                <a class="nav-link nav_link_" style="color: white; font-weight: 320;">Featured</a>
                             </li>
                             <li class="nav-text active  float-right">
-                                <a class="nav-link nav_link_" style="color: white">Our Team <span
+                                <a class="nav-link nav_link_" style="color: white; font-weight: 320;">Our Team <span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-text active navbar-right">
-                                <a class="nav-link nav_link_" style="color: white">Contact Us</a>
+                                <a class="nav-link nav_link_" style="color: white;  font-weight: 320;">About</a>
                             </li>
 
                             </li>
@@ -78,12 +78,12 @@
         </div>
                 {% block content1 %}
 
-        <div class="container bg-white py-5 mt-2 animate__animated animate__fadeIn animate__slower">
+        <div class="container bg-white py-5 mt-2  animate__fadeIn animate__slower">
             <div class="row align-items-end justify-content-center ">
-                <div class="col-sm-6 ">
+                <div class="col-sm-6 border_dark_">
                     <a href="{% url 'firsttune:post1' %}">
                         <div class="position-relative">
-                            <img src="{% static 'firsttune/p6.jfif' %}" class="img-fluid imgs1 w-100">
+                            <img src="{% static 'firsttune/p7.jfif' %}" class="img-fluid imgs1 w-100">
                             <div class="position-absolute text1 text-white bg_linear1  py-1 text-center">
                                 <div class="pt-5 text-md-left px-5">
                                     <p>In the latest news
@@ -97,7 +97,7 @@
                 </div>
                 <div class="col-sm-6">
                     <div class="position-relative">
-                        <img src="{% static 'firsttune/p3.jfif' %}" class="img-fluid imgs1 w-100">
+                        <img src="{% static 'firsttune/p7.jfif' %}" class="img-fluid imgs1 w-100">
                         <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
                             <div class="pt-2 text-md-left px-5">
                                 <p>In the latest news
@@ -115,7 +115,7 @@
                 <div class="row align-items-end justify-content-center">
                     <div class="col-sm-4  ">
                         <div class="position-relative">
-                            <img src="{% static 'firsttune/p2.jfif' %}" class="img-fluid imgs1 w-100">
+                            <img src="{% static 'firsttune/p8.jfif' %}" class="img-fluid imgs1 w-100">
                             <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
                                 <div class="pt-5 text-md-left px-3">
                                     <p>In the latest news
@@ -128,7 +128,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="position-relative">
-                            <img src="{% static 'firsttune/p3.jfif' %}" class="img-fluid imgs1 w-100">
+                            <img src="{% static 'firsttune/p8.jfif' %}" class="img-fluid imgs1 w-100">
                             <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
                                 <div class="pt-5 text-md-left px-3">
                                     <p>In the latest news
@@ -141,7 +141,7 @@
                     </div>
                     <div class="col-sm-4">
                         <div class="position-relative">
-                            <img src="{% static 'firsttune/p5.png' %}" class="img-fluid imgs1 w-100">
+                            <img src="{% static 'firsttune/p9.jfif' %}" class="img-fluid imgs1 w-100">
                             <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
                                 <div class="pt-5 text-md-left px-3">
                                     <p>In the latest news
@@ -157,7 +157,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-sm-12 my-5">
                         <div class="position-relative">
-                            <img src="{% static 'firsttune/p6.jfif' %}" class="img-fluid imgs1 w-100">
+                            <img src="{% static 'firsttune/p9.jfif' %}" class="img-fluid imgs1 w-100">
                             <div class="position-absolute text1 text-white bg_linear1 py-1 text-center w-100">
                                 <div class="pt-5">
                                     <p>In the latest news
