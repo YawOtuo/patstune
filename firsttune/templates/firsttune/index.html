@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="{% static 'firsttune/index.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="{% static 'michael/animate.css' %}"> -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -45,133 +45,139 @@
     </div>
     <div class='wait_small d9' id='wait_small'>
 
-        <div class="container-fluid box_shadow animate__animated animate__fadeIn animate__slow">
-            <div class="row align-items-center justify-content-center brandcolor">
-                <nav class="navbar navbar-expand-lg fixed navbar-dark w-100 brandcolor"
+        <div class="container-fluid box_shadow animate__animated animate__fadeIn animate__slow position-relative">
+            <div class="row align-items-center justify-content-center brandcolor_border">
+                <nav class="navbar navbar-expand-lg fixed navbar-light w-100 brandcolor"
                     style="background-color: inherit; ">
-                    <a class="navbar-brand  " style="color: white">
+                    <a class="navbar-brand  " style="">
                         <!-- <img src="{% static 'michael/clipmask2.jpg' %}" class="nav-image" height="35px" width="35px"></img> -->
-                        <span class="customfont"> PATSTUNE</span>
+                        <span class="customfont text-dark"> PATSTUNE</span>
                     </a>
+
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse  float-right" id="navbarNav">
+
+                    <div class="collapse navbar-collapse  " id="navbarNav">
+
                         <ul class="nav navbar-nav navbar-right ml-auto">
+
+                            <li class="nav-text active navbar-right">
+                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">Home</a>
+                            </li>
                             <li class="nav-item">
-                                <a class="nav-link nav_link_" style="color: white; font-weight: 320;">Featured</a>
+                                <a class="nav-link nav_link_ text-dark" style="font-weight: 320;">Education</a>
                             </li>
                             <li class="nav-text active  float-right">
-                                <a class="nav-link nav_link_" style="color: white; font-weight: 320;">Our Team <span
+                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">Information <span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-text active navbar-right">
-                                <a class="nav-link nav_link_" style="color: white;  font-weight: 320;">About</a>
+                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">Africa</a>
+                            </li>
+                            <li class="nav-text active navbar-right">
+                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">About</a>
                             </li>
 
-                            </li>
                         </ul>
                     </div>
-                </nav>
-            </div>
-        </div>
-                {% block content1 %}
 
-        <div class="container bg-white py-5 mt-2  animate__fadeIn animate__slower">
-            <div class="row align-items-end justify-content-center ">
-                <div class="col-sm-6 border_dark_">
-                    <a href="{% url 'firsttune:post1' %}">
-                        <div class="position-relative">
-                            <img src="{% static 'firsttune/p7.jfif' %}" class="img-fluid imgs1 w-100">
-                            <div class="position-absolute text1 text-white bg_linear1  py-1 text-center">
-                                <div class="pt-5 text-md-left px-5">
-                                    <p>In the latest news
-                                        The Kwame Nkrumah University of sciecen and technology</p>
-                                </div>
-                            </div>
+                </nav>
+                
+            </div>
+            <div class="row align-items-end justify-content-end position-absolute socials">
+                <div class="col-sm- ">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+
+
+                </div>
+            </div>
+
+        </div>
+        {% block content1 %}
+
+        <div class="container bg-white py-5 mt-2  animate__fadeIn animate__slower ">
+            <div class="row align-items-end justify-content-start justify-content-md-start 
+             my-2 border_dark_ mb-4 mx-3 mx-sm-auto">
+                <div class="col-sm- mr-0 mr-md-5 mb-4 mb-md-0">
+                    <a href="{% url 'firsttune:post1' %}" class="customcolor">
+                        <div class="">
+                            <img src="{% static 'firsttune/p7.jfif' %}" class="img-fluid  ">
+                            <p class="my-3">Article One: What is ?</p>
+
                         </div>
                     </a>
 
 
                 </div>
-                <div class="col-sm-6">
-                    <div class="position-relative">
-                        <img src="{% static 'firsttune/p7.jfif' %}" class="img-fluid imgs1 w-100">
-                        <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
-                            <div class="pt-2 text-md-left px-5">
-                                <p>In the latest news
-                                    The Kwame Nkrumah University of sciecen and technology</p>
-                            </div>
+                <div class="col-sm- mr-0 mr-md-5 mb-4 mb-md-0">
+                    <a href="{% url 'firsttune:post1' %}" class="customcolor">
+                        <div class="">
+                            <img src="{% static 'firsttune/p8.jfif' %}" class="img-fluid  ">
+                            <p class="my-3">Article Two: What is Life?</p>
+
                         </div>
-                    </div>
-                    <!-- <div class="col-sm-3 border_right_color s">
-                    First post goes here
-                </div> -->
+                    </a>
+
 
                 </div>
             </div>
-            <div class="container bg-white py-5 ">
-                <div class="row align-items-end justify-content-center">
-                    <div class="col-sm-4  ">
-                        <div class="position-relative">
-                            <img src="{% static 'firsttune/p8.jfif' %}" class="img-fluid imgs1 w-100">
-                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
-                                <div class="pt-5 text-md-left px-3">
-                                    <p>In the latest news
-                                        The Kwame Nkrumah University of sciecen and technology</p>
-                                </div>
-                            </div>
+            <div class="row align-items-end justify-content-start justify-content-md-start
+             my-5 border_dark_ mb-4 mx-3 mx-sm-auto">
+                <div class="col-sm- mr-0 mr-md-5 mb-4 mb-md-0">
+                    <a href="{% url 'firsttune:post1' %}" class="customcolor">
+                        <div class="">
+                            <img src="{% static 'firsttune/p9.jfif' %}" class="img-fluid  ">
+                            <p class="my-3">Article 3: What is Life?</p>
+
                         </div>
+                    </a>
 
-
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="position-relative">
-                            <img src="{% static 'firsttune/p8.jfif' %}" class="img-fluid imgs1 w-100">
-                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
-                                <div class="pt-5 text-md-left px-3">
-                                    <p>In the latest news
-                                        The Kwame Nkrumah University of sciecen and technology</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="position-relative">
-                            <img src="{% static 'firsttune/p9.jfif' %}" class="img-fluid imgs1 w-100">
-                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center">
-                                <div class="pt-5 text-md-left px-3">
-                                    <p>In the latest news
-                                        The Kwame Nkrumah University of sciecen and technology</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
 
                 </div>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-sm-12 my-5">
-                        <div class="position-relative">
-                            <img src="{% static 'firsttune/p9.jfif' %}" class="img-fluid imgs1 w-100">
-                            <div class="position-absolute text1 text-white bg_linear1 py-1 text-center w-100">
-                                <div class="pt-5">
-                                    <p>In the latest news
-                                        The Kwame Nkrumah University of sciecen and technology</p>
-                                </div>
-                            </div>
+                <div class="col-sm- mr-0 mr-md-5 mb-4 mb-md-0">
+                    <a href="{% url 'firsttune:post1' %}" class="customcolor">
+                        <div class="">
+                            <img src="{% static 'firsttune/p7.jfif' %}" class="img-fluid  ">
+                            <p class="my-3">Article 4: What is Life?</p>
+
                         </div>
+                    </a>
 
 
-                    </div>
                 </div>
+                <div class="col-sm- mr-0 mr-md-5 mb-4 mb-md-0">
+                    <a href="{% url 'firsttune:post1' %}" class="customcolor">
+                        <div class="">
+                            <img src="{% static 'firsttune/p8.jfif' %}" class="img-fluid  ">
+                            <p class="my-3">Article 5: What is Life?</p>
 
+
+                        </div>
+                    </a>
+
+
+                </div>
             </div>
-        {% endblock %}
+            <div class="row align-items-center justify-content-start justify-content-md-start my-2 
+            pt-2 border_dark_ mb-4 mx-3 mx-sm-auto">
+                <div class="col-sm- mb-4 mb-md-0 ">
+                    <a href="{% url 'firsttune:post1' %}" class="customcolor">
+                        <div class="">
+                            <img src="{% static 'firsttune/p9.jfif' %}" class="img-fluid  ">
+                            <p class="my-3">Article 6: What is Life?</p>
+
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+
+
+            {% endblock %}
         </div>
 </body>
 
