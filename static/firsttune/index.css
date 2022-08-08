@@ -74,11 +74,22 @@
     background-image: linear-gradient(to bottom, transparent,  var(--b1), var(--b1));
 }
 
-.font_nice1{
-    line-height: 2;
-    font-size: 1.3rem;
-    font-weight: 350;
-    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+@media screen and (min-width: 770px) {
+    .font_nice1{
+        line-height: 2;
+        font-size: 1.3rem;
+        font-weight: 350;
+        /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .font_nice1{
+        font-size: 1rem;
+        font-weight: 400;
+        /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    }
 }
 
 .fa {

@@ -39,7 +39,12 @@
         <div id='homerow' class="row align-items-center justify-content-center">
             <div class="col-sm-12 text-center">
                 <h1 class="font-weight-bold text-large font-large text-white 
-                hometext customfont px-5 px-sm-0">PAT'S TUNE</h1>
+                hometext customfont px-5 px-sm-0 animate__animated animate__fadeIn animate__slower">PAT'S TUNE</h1>
+            </div>
+            <div class="col-sm-12 text-center">
+                <p class="text-capitalize font-weight-bold text-large font-large text-white 
+                  px-5 px-sm-0 animate__animated animate__fadeIn 
+                animate__slower">Rich Information for this generation</p>
             </div>
         </div>
     </div>
@@ -64,20 +69,20 @@
                         <ul class="nav navbar-nav navbar-right ml-auto">
 
                             <li class="nav-text active navbar-right">
-                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">Home</a>
+                                <a href="{% url 'firsttune:index' %}" class="nav-link nav_link_ text-dark" style=" font-weight: 350;">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link nav_link_ text-dark" style="font-weight: 320;">Education</a>
+                                <a href="{% url 'firsttune:index' %}" class="nav-link nav_link_ text-dark" style="font-weight: 350;">Education</a>
                             </li>
                             <li class="nav-text active  float-right">
-                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">Information <span
+                                <a href="{% url 'firsttune:index' %}" class="nav-link nav_link_ text-dark" style=" font-weight: 350;">Information <span
                                         class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-text active navbar-right">
-                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">Africa</a>
+                                <a href="{% url 'firsttune:index' %}" class="nav-link nav_link_ text-dark" style=" font-weight: 350;">Africa</a>
                             </li>
                             <li class="nav-text active navbar-right">
-                                <a class="nav-link nav_link_ text-dark" style=" font-weight: 320;">About</a>
+                                <a href="{% url 'firsttune:index' %}" class="nav-link nav_link_ text-dark" style=" font-weight: 350;">About</a>
                             </li>
 
                         </ul>
