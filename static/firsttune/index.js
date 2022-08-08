@@ -1,9 +1,9 @@
 window.onload = (event) => {
-    fadeIn()
+    // fadeIn()
 
-    setTimeout(remove, 2500)
-    hide_wait_small()
-    setTimeout(show_wait_small, 1500)
+    // setTimeout(remove, 2500)
+    // hide_wait_small()
+    // setTimeout(show_wait_small, 1500)
 
 
 }
