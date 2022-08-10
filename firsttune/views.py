@@ -33,6 +33,18 @@ class IndexView(TemplateView):
 class Post1View(TemplateView):
     template_name = "firsttune/post1.html"
 
+class EducationView(TemplateView):
+    template_name = "firsttune/education.html"
+
+class InformationView(TemplateView):
+    template_name = "firsttune/information.html"
+
+class AfricaView(TemplateView):
+    template_name = "firsttune/africa.html"
+
+class AboutView(TemplateView):
+    template_name = "firsttune/about.html"
+
 
 # class TeamView(TemplateView):
 #     template_name = 'michael/team.html'

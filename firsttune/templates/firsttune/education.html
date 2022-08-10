@@ -11,6 +11,8 @@
 
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'firsttune/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'firsttune/educational.css' %}">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -96,20 +98,42 @@
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
 
-
+                
                 </div>
+                
             </div>
 
         </div>
         {% block content1 %}
 
-        <div class="container bg-white py-5 mt-2 animate__animated animate__fadeIn animate__slower ">
+        <div class="container bg-white py-5 pt-0 animate__animated animate__fadeIn animate__slower ">
+           
+            <!-- <div class="row align-items-center justify-content-center educational_row">
+                <div class="col-sm-4 ">
+                    <img src="{% static 'firsttune/education1.png' %}" class="img-fluid  w-100">
+
+                
+                </div> 
+                <div class="col-sm-4">
+                    <h4>Educational Content For Everyone</h4>
+                </div>
+            </div>
+            -->
+            <div class="row align-items-center justify-content-center justify-content-sm-start">
+                <div class="col-sm- text-center text-sm-left educational_row mb-5 w-100">
+                    <img src="{% static 'firsttune/education1.png' %}" class="img-fluid ">
+                    <h2 class='text-uppercase d-block  d-sm-inline '>Education</h2>
+                </div>
+                
+            </div>
             <div class="row align-items-end justify-content-start justify-content-md-start 
              my-2 border_dark_ mb-4 mx-3 mx-sm-auto">
                 
-                <div class="col-sm- mr-0 mr-md-5 mb-4 mb-md-0">
-                    <a href="{% url 'firsttune:post1' %}" class="customcolor">
-                            <h6>Newest Articles</h6>
+               
+                <div class="col-sm- mr-0 mr-md-5 mb-4 mb-md-0 ">
+                    
+                    <a href="{% url 'firsttune:post1' %}" class="customcolor w-100">
+                        
                         <div class="">
                             <img src="{% static 'firsttune/p7.jfif' %}" class="img-fluid  ">
                             <p class="my-3">Article One: What is ?</p>
